@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Choose your Somnus Sleepbuds colour, then check the current price, availability and seller terms on the live marketplace listing.">
+  <title>Shop Sleepbuds | Somnus</title>
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/shop.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/shop.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Somnus home"><img src="images/ear-mark.png" alt="">SOMNUS</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="why-choose-us.html">Why Sleepbuds</a>
+        <a href="guides.html">Guides</a>
+        <a href="faq-reviews.html">FAQ</a>
+        <a href="our-story.html">Our Story</a>
+        <a class="button dark" href="shop.html">Shop sleepbuds</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shop-page" aria-labelledby="shop-title">
+      <div class="wrap">
+        <header class="shop-page__head reveal">
+          <h1 id="shop-title">Shop sleepbuds</h1>
+          <p>Find your peace. One perfect fit, four calming colours.</p>
+        </header>
+
+        <div class="shop-product">
+          <div class="shop-product__photo reveal">
+            <img src="images/product/dream-lilac-1.png" alt="Lilac Somnus Sleepbuds" data-product-image>
+          </div>
+
+          <div class="shop-product__panel reveal">
+            <h2 class="shop-product__name">Somnus Sleepbuds</h2>
+            <p class="shop-product__benefit">Engineered for peace. A pressure-free, reusable design that silences snoring and lets you drift off—with 27dB (SNR) of deep noise reduction.</p>
+
+            <p class="shop-product__price">
+              <span class="shop-sr">Price: </span>S$55.53 
+            </p>
+
+            <!--
+              All four colours currently share one Shopee listing.
+              Give a colour its own data-listing-url (https:// only) if it gets a separate link.
+            -->
+            <fieldset class="colour-picker">
+              <legend>Colour: <strong data-colour-name>Lilac</strong></legend>
+              <div class="colour-picker__options">
+                <label class="colour-option">
+                  <input type="radio" name="colour" value="black" data-label="Black" data-image="images/product/dream-black-1.png" data-listing-url="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342?extraParams=%7B%22display_model_id%22%3A119525184971%2C%22model_selection_logic%22%3A3%7D&amp;image_ids=cn-11134207-820l4-mszqxuxllurr5c">
+                  <span class="colour-option__inner"><img src="images/product/dream-black-1.png" alt="" width="56" height="56"></span>
+                </label>
+                <label class="colour-option">
+                  <input type="radio" name="colour" value="blue" data-label="Blue" data-image="images/product/dream-blue-1.png" data-listing-url="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342?extraParams=%7B%22display_model_id%22%3A119525184971%2C%22model_selection_logic%22%3A3%7D&amp;image_ids=cn-11134207-820l4-mszqxuxllurr5c">
+                  <span class="colour-option__inner"><img src="images/product/dream-blue-1.png" alt="" width="56" height="56"></span>
+                </label>
+                <label class="colour-option">
+                  <input type="radio" name="colour" value="lilac" data-label="Lilac" data-image="images/product/dream-lilac-1.png" data-listing-url="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342?extraParams=%7B%22display_model_id%22%3A119525184971%2C%22model_selection_logic%22%3A3%7D&amp;image_ids=cn-11134207-820l4-mszqxuxllurr5c" checked>
+                  <span class="colour-option__inner"><img src="images/product/dream-lilac-1.png" alt="" width="56" height="56"></span>
+                </label>
+                <label class="colour-option">
+                  <input type="radio" name="colour" value="peach" data-label="Peach" data-image="images/product/dream-peach-1.png" data-listing-url="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342?extraParams=%7B%22display_model_id%22%3A119525184971%2C%22model_selection_logic%22%3A3%7D&amp;image_ids=cn-11134207-820l4-mszqxuxllurr5c">
+                  <span class="colour-option__inner"><img src="images/product/dream-peach-1.png" alt="" width="56" height="56"></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <p class="shop-product__included"><span>Ear tips:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choose from Foam-Silicone or Double Tips</p>
+            
+            <dl class="shop-terms">
+              
+              <div><dt>Shipping</dt><dd>Express doorstep delivery S$1.99, or free self-collection at lockers and collection points</dd></div>
+              <div><dt>Returns</dt><dd>15-day free returns under Shopee's Shopping Guarantee</dd></div>
+            </dl>
+
+            <div class="shop-product__actions" data-primary-actions>
+              <a class="button dark" data-listing-link target="_blank" rel="noopener">View current listing <span aria-hidden="true">↗</span><span class="shop-sr"> (opens in a new tab)</span></a>
+              <a class="shop-details-link" href="product-detail.html?colour=lilac" data-details-link>Full product details <span aria-hidden="true">→</span></a>
+            </div>
+            <p class="shop-product__note to-verify" data-listing-note hidden>[Add the marketplace listing URL for this colour]</p>
+            <p class="shop-product__note">Prices and shipping are based on our current seasonal promotions and discounts. Please verify the final price and delivery date on the live listing before checkout.</p>
+          </div>
+        </div>
+
+        <nav class="shop-help" aria-label="Help before you buy">
+          <a class="shop-help__card reveal" href="faq-reviews.html#fit">
+            <h2>Product questions</h2>
+            <p>Fit, comfort and how to choose the right ear tips.</p>
+            <span class="shop-help__more">Read answers <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="shop-help__card reveal" href="faq-reviews.html#shipping">
+            <h2>Shipping &amp; returns</h2>
+            <p>What to check with the seller before you order.</p>
+            <span class="shop-help__more">See details <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="shop-help__card reveal" href="faq-reviews.html#reviews">
+            <h2>Reviews &amp; FAQ</h2>
+            <p>See what to weigh up before making your choice.</p>
+            <span class="shop-help__more">Read reviews <span aria-hidden="true">→</span></span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <div class="shop-buybar" data-buybar hidden>
+    <p><strong>Somnus Sleepbuds</strong> <span data-colour-name>Lilac</span></p>
+    <a class="button dark" data-listing-link target="_blank" rel="noopener">View listing <span aria-hidden="true">↗</span><span class="shop-sr"> (opens in a new tab)</span></a>
+  </div>
+
+  <footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="index.html"><img src="images/ear-mark.png" alt="">SOMNUS</a><p>A calm place to explore the questions that matter before choosing sleepbuds.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="why-choose-us.html">Why Choose Us</a><a href="faq-reviews.html">FAQ &amp; Reviews</a><a href="shop.html" aria-current="page">Shop sleepbuds</a></div><div><h3>Need an answer?</h3><a href="faq-reviews.html#fit">Fit and comfort</a><a href="faq-reviews.html#shipping">Shipping &amp; returns</a><a href="faq-reviews.html#reviews">Reviews</a><a href="privacy-policy.html">Privacy Policy</a></div></div><div class="footer-bottom"><span>© 2026 Somnus</span><span>Prices, availability and terms are set by the seller.</span></div></div></footer>
+</body>
+</html>
