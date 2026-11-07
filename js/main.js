@@ -57,11 +57,13 @@
     var ticking = false;
     function update() {
       header.classList.toggle('is-scrolled', window.scrollY > 8);
+      document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
       ticking = false;
     }
     window.addEventListener('scroll', function () {
       if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
     }, { passive: true });
+    window.addEventListener('resize', update);
     update();
   })();
 
@@ -150,123 +152,56 @@
     });
   })();
 
-  /* 6. Before/after sound toggle: two buttons switch between the two clips,
-        keeping the playback position. The native <audio> players stay as the
-        no-JS fallback. Never autoplays; a second press on the playing clip pauses. */
-  (function soundToggle() {
-    var box = $('[data-sound]');
-    if (!box) return;
-    var controls = $('[data-sound-controls]', box);
-    var status = $('[data-sound-status]', box);
-    var tracks = {
-      before: $('[data-sound-track="before"]', box),
-      after: $('[data-sound-track="after"]', box)
-    };
-    var buttons = $$('[data-sound-btn]', box);
-    if (!controls || !tracks.before || !tracks.after || !buttons.length) return;
-    controls.hidden = false;
-
-    var names = { before: 'snoring without earplugs', after: 'snoring with Loop Dream' };
-    function say(msg) { if (status) status.textContent = msg; }
-    function press(which) {
-      buttons.forEach(function (b) {
-        b.setAttribute('aria-pressed', String(b.getAttribute('data-sound-btn') === which));
-      });
-      box.setAttribute('data-playing', which || 'none');
-    }
-
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var which = btn.getAttribute('data-sound-btn');
-        var other = which === 'before' ? 'after' : 'before';
-        var track = tracks[which];
-        if (!track.paused) { track.pause(); return; }
-        var t = tracks[other].currentTime || 0;
-        tracks[other].pause();
-        try { track.currentTime = t; } catch (err) { /* not loaded yet */ }
-        var p = track.play();
-        if (p && p.catch) {
-          p.catch(function () { press(null); say('Sorry, this sound clip is not available yet.'); });
-        }
-      });
-    });
-    // Keep buttons and status in sync with the native players too.
-    Object.keys(tracks).forEach(function (key) {
-      var track = tracks[key];
-      track.addEventListener('play', function () {
-        var other = tracks[key === 'before' ? 'after' : 'before'];
-        if (!other.paused) other.pause();
-        press(key);
-        say('Playing: ' + names[key] + '.');
-      });
-      track.addEventListener('pause', function () {
-        if (tracks.before.paused && tracks.after.paused) { press(null); say('Paused.'); }
-      });
-      track.addEventListener('ended', function () { press(null); say('Finished.'); });
+  /* 6. Offer strip: hides a [data-offer-ends="YYYY-MM-DD"] offer once its end
+        date has passed, so an expired deal never stays on the page. */
+  (function offerStrip() {
+    var today = new Date().toISOString().slice(0, 10);
+    $$('[data-offer-ends]').forEach(function (offer) {
+      if (offer.getAttribute('data-offer-ends') < today) offer.hidden = true;
     });
   })();
 
-  /* 7. Tip-size finder: three radio questions -> a starting size (XS-L) and
-        tip type, shown in an aria-live region. Logic is a rule of thumb (see the
-        PLACEHOLDER in product-guide.html). */
+  /* 7. Tip-size finder: three dropdowns -> a starting size (XS-L) and tip
+        type, updated as soon as all three are answered. */
   (function tipFinder() {
     var form = $('[data-tip-finder]');
     var result = $('[data-tip-result]');
-    var body = result && $('[data-tip-result-body]', result);
-    if (!form || !body) return;
-    form.setAttribute('novalidate', '');
+    if (!form || !result) return;
 
     var SIZES = ['XS', 'S', 'M', 'L'];
     var START = { small: 1, average: 2, large: 3, unsure: 2 };
     var NUDGE = { fallout: 1, sore: -1, fine: 0 };
     var TIPS = {
-      comfort: { name: 'oval tips', why: 'The oval tip wraps memory foam in soft silicone, the softest option to lie on.' },
-      seal: { name: 'double-stacked tips', why: 'The double-stacked tip gives a firmer seal against snoring.' }
+      comfort: { name: 'Foam-Silicone tips', why: 'The Foam-Silicone tip wraps memory foam in soft silicone, the softest option to lie on.' },
+      seal: { name: 'Double Tips', why: 'The Double Tip gives a firmer seal against snoring.' }
     };
+    var size = $('[data-tip-size]', result);
+    var type = $('[data-tip-type]', result);
+    var whyText = $('[data-tip-why]', form);
 
-    function answer(name) {
-      var picked = $('input[name="' + name + '"]:checked', form);
-      return picked ? picked.value : null;
-    }
-    function setError(name, msg) {
-      var input = $('input[name="' + name + '"]', form);
-      var fieldset = input && input.closest('fieldset');
-      if (!fieldset) return;
-      var err = document.getElementById(fieldset.getAttribute('aria-describedby'));
-      fieldset.classList.toggle('is-invalid', !!msg);
-      if (err) err.textContent = msg || '';
-    }
-
-    form.addEventListener('change', function (e) {
-      if (e.target.name) setError(e.target.name, '');
-    });
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var canal = answer('canal'), past = answer('past'), priority = answer('priority');
-      var missing = null;
-      [['canal', canal], ['past', past], ['priority', priority]].forEach(function (q) {
-        if (!q[1]) {
-          setError(q[0], 'Choose an answer to this question.');
-          if (!missing) missing = q[0];
-        }
-      });
-      if (missing) {
-        $('input[name="' + missing + '"]', form).focus();
+    function update() {
+      var canal = form.elements.canal.value;
+      var past = form.elements.past.value;
+      var priority = form.elements.priority.value;
+      var done = canal && past && priority;
+      result.classList.toggle('is-visible', !!done);
+      whyText.hidden = !done;
+      if (!done) {
+        size.textContent = '?';
+        type.textContent = 'Answer all 3';
         return;
       }
-
       var i = Math.max(0, Math.min(SIZES.length - 1, START[canal] + NUDGE[past]));
-      var tip = TIPS[priority];
-      var why = tip.why;
+      var why = TIPS[priority].why;
       if (past === 'fallout') why += ' One size up helps if plugs usually work loose.';
       if (past === 'sore') why += ' One size down eases pressure if plugs usually feel sore.';
+      size.textContent = SIZES[i];
+      type.textContent = TIPS[priority].name;
+      whyText.textContent = why;
+    }
 
-      $('[data-tip-size]', body).textContent = SIZES[i];
-      $('[data-tip-type]', body).textContent = tip.name;
-      $('[data-tip-why]', body).textContent = why;
-      body.hidden = false;
-      result.classList.add('is-visible');
-    });
+    form.addEventListener('change', update);
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
   })();
 
   /* 8. Guide in-page nav: highlights the link for the section in view
