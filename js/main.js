@@ -175,9 +175,9 @@
       comfort: { name: 'Foam-Silicone tips', why: 'The Foam-Silicone tip wraps memory foam in soft silicone, the softest option to lie on.' },
       seal: { name: 'Double Tips', why: 'The Double Tip gives a firmer seal against snoring.' }
     };
-    var size = $('[data-tip-size]', result);
-    var type = $('[data-tip-type]', result);
+    var value = $('[data-tip-value]', result);
     var whyText = $('[data-tip-why]', form);
+    var shop = $('[data-tip-shop]', form);
 
     function update() {
       var canal = form.elements.canal.value;
@@ -186,17 +186,16 @@
       var done = canal && past && priority;
       result.classList.toggle('is-visible', !!done);
       whyText.hidden = !done;
+      if (shop) shop.hidden = !done;
       if (!done) {
-        size.textContent = '?';
-        type.textContent = 'Answer all 3';
+        value.textContent = 'Answer all 3 questions';
         return;
       }
       var i = Math.max(0, Math.min(SIZES.length - 1, START[canal] + NUDGE[past]));
       var why = TIPS[priority].why;
       if (past === 'fallout') why += ' One size up helps if plugs usually work loose.';
       if (past === 'sore') why += ' One size down eases pressure if plugs usually feel sore.';
-      size.textContent = SIZES[i];
-      type.textContent = TIPS[priority].name;
+      value.textContent = SIZES[i] + ' — ' + TIPS[priority].name;
       whyText.textContent = why;
     }
 
