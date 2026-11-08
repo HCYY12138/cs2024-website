@@ -187,7 +187,7 @@ details p { color:var(--muted); margin:0 0 22px; max-width:760px; }
    eyebrows, leads and the footer repeat the look of the rules above. */
 .page { --glass:rgba(255,254,250,.62); --glass-line:rgba(220,222,220,.8); --error:#a3302a; --success:#3f6b4f; }
 .page [id] { scroll-margin-top:110px; }
-html.has-buy-bar body { padding-bottom:calc(84px + env(safe-area-inset-bottom)); }
+@media (max-width:700px) { html.has-buy-bar body { padding-bottom:calc(84px + env(safe-area-inset-bottom)); } }
 .main { background:radial-gradient(60rem 40rem at 95% 12rem,#ded6e870,transparent 70%),radial-gradient(50rem 40rem at 0 55%,#e7ebe390,transparent 70%); }
 .main:focus { outline:none; }
 .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
@@ -227,7 +227,7 @@ html.has-buy-bar body { padding-bottom:calc(84px + env(safe-area-inset-bottom));
 .navbar__link:hover,.navbar__link[aria-current="page"] { border-color:var(--ink); }
 .navbar__cta { flex:none; }
 .navbar__toggle { display:none; align-items:center; gap:.5rem; min-height:44px; background:none; border:0; padding:10px; cursor:pointer; font-size:.85rem; font-weight:700; color:var(--ink); }
-.navbar__toggle-icon { display:block; width:22px; height:12px; border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); }
+.navbar__toggle-icon { display:block; width:22px; height:16px; border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); background:linear-gradient(currentColor,currentColor) center / 100% 2px no-repeat; }
 .navbar__toggle[hidden] { display:none; }
 
 
@@ -414,8 +414,11 @@ td.compare__col--featured { background:#f1eef4; color:var(--ink); }
   .breadcrumb,.product-hero,.expectations,.story,.in-box,.compare,.stories,.faq-teaser,.guide-section,.quick-help,.contact,.navbar,.cta-band.glass { width:min(calc(100% - 36px),var(--max)); }
   .page [id] { scroll-margin-top:90px; }
   .navbar { height:70px; gap:.5rem; }
-  .navbar__logo-text { display:none; }
-  .navbar__toggle { display:inline-flex; margin-left:auto; }
+  .navbar__logo-img { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+  .navbar__logo { font-size:.82rem; letter-spacing:.18em; }
+  .navbar__toggle { display:inline-flex; margin-left:-10px; }
+  .navbar__logo { position:absolute; left:50%; transform:translateX(-50%); }
+  .navbar__cta { margin-left:auto; }
   .navbar__toggle[hidden] { display:none; }
   .navbar__cta { min-height:44px; padding:.6rem .9rem; font-size:.8rem; }
   .js .navbar__menu { display:none; position:absolute; top:70px; left:-18px; right:-18px; background:var(--cream); border-bottom:1px solid var(--line); padding:18px; box-shadow:0 12px 20px #18212d12; }
@@ -510,6 +513,7 @@ html { scroll-padding-top:calc(var(--header-h) + 16px); }
 .page--guide .guide-hero::after { content:""; position:absolute; inset:calc(var(--header-h,82px) * -1) 0 0; z-index:-1; background:linear-gradient(90deg,#0e1117 0%,#0e1117 30%,rgba(14,17,23,.82) 44%,rgba(14,17,23,.25) 72%,rgba(14,17,23,.4) 100%); }
 .page--guide .guide-hero__title { color:#fff; }
 .page--guide .guide-hero__eyebrow { color:#cdbde8; }
+.page--guide .guide-hero__lead { color:rgba(255,255,255,.86); margin:0; }
 .page--guide .guide-hero .btn--primary { background:#fff; color:var(--ink); border-color:#fff; }
 .page--guide .guide-hero .link-arrow { color:#fff; border-bottom-color:#fff; }
 

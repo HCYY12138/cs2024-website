@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="styles/site.css">
   <script src="js/main.js" defer></script>
 
-  <!-- PLACEHOLDER: email, phone (WhatsApp) and address in this JSON-LD are stand-ins; update with the on-page details -->
+   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,14 +43,16 @@
       "url": "https://gooffries.github.io/cs2024-website/index.html",
       "logo": "https://gooffries.github.io/cs2024-website/images/ear-mark.png",
       "email": "hello@somnus.sg",
-      "address": { "@type": "PostalAddress", "addressLocality": "Singapore", "addressCountry": "SG" },
+      "address": { "@type": "PostalAddress", "streetAddress": "116 Commonwealth Crescent", "addressLocality": "Singapore", "postalCode": "140116", "addressCountry": "SG" },
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "email": "hello@somnus.sg",
         "telephone": "+65 0000 0000",
         "areaServed": "SG",
-        "availableLanguage": "English"
+        "availableLanguage": "English",
+        "streetAddress": "116 Commonwealth Crescent", 
+        "postalCode": "140116"
       }
     }
   }
@@ -72,14 +74,14 @@
   <!-- ===== Shared header (identical on every page; only aria-current moves) ===== -->
   <header class="site-header" data-site-header>
     <nav class="navbar glass" aria-label="Main">
+      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+        <span class="navbar__toggle-icon" aria-hidden="true"></span>
+        <span class="navbar__toggle-label visually-hidden">Menu</span>
+      </button>
       <a class="navbar__logo" href="index.html">
         <img class="navbar__logo-img" src="images/ear-mark.png" alt="Somnus home" width="120" height="32">
         <span class="navbar__logo-text" aria-hidden="true">Somnus</span>
       </a>
-      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
-        <span class="navbar__toggle-icon" aria-hidden="true"></span>
-        <span class="navbar__toggle-label">Menu</span>
-      </button>
       <div class="navbar__menu" id="site-menu">
         <ul class="navbar__links">
           <li class="navbar__item"><a class="navbar__link" href="shop.html">Shop</a></li>
