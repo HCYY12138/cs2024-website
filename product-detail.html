@@ -56,17 +56,6 @@
     }
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gooffries.github.io/cs2024-website/index.html" },
-      { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://gooffries.github.io/cs2024-website/shop.html" },
-      { "@type": "ListItem", "position": 3, "name": "Somnus", "item": "https://gooffries.github.io/cs2024-website/product-detail.html" }
-    ]
-  }
-  </script>
 </head>
 <body class="page page--product">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -96,14 +85,6 @@
   </header>
 
   <main id="main" class="main" tabindex="-1">
-
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <ol class="breadcrumb__list">
-        <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
-        <li class="breadcrumb__item"><a class="breadcrumb__link" href="shop.html">Shop</a></li>
-        <li class="breadcrumb__item"><a class="breadcrumb__link" href="product-detail.html" aria-current="page">Somnus</a></li>
-      </ol>
-    </nav>
 
     <!-- ===== 1. Product hero: sticky gallery (left) + buy panel (right) ===== -->
     <section class="product-hero" aria-labelledby="product-title">
@@ -149,18 +130,7 @@
       </div>
 
       <div class="product-hero__panel buy-panel glass" data-buy-anchor>
-        <p class="buy-panel__eyebrow">Sleep earplugs for side sleepers in Singapore</p>
         <h1 class="buy-panel__title" id="product-title">Somnus Sleep Earplugs</h1>
-        <p class="buy-panel__lead">Somnus Sleep Earplugs cut noise by 27 dB (SNR) and sit flat in your ear, so you can sleep on your side next to a snorer or a noisy corridor. S$64.95 with all 4 tip sizes, in stock in Singapore. No pills, no battery, no charging.</p>
-
-        <ul class="buy-panel__facts" aria-label="Key facts">
-          <li class="buy-panel__fact"><strong>27 dB</strong> SNR noise reduction</li>
-          <li class="buy-panel__fact">Flat, low-profile ends for lying on your side</li>
-          <li class="buy-panel__fact">Foam wrapped in silicone, so the seal holds on humid nights</li>
-          <li class="buy-panel__fact">Reusable and easy to clean</li>
-          <li class="buy-panel__fact award">SleepTech 2024 Award</li>
-        </ul>
-
         <fieldset class="swatches" data-swatches>
           <legend class="swatches__legend">Colour: <span class="swatches__current" data-colour-label>Black</span></legend>
           <div class="swatches__options">
@@ -197,7 +167,6 @@
 
         <div class="price">
           <p class="price__amount"><span class="price__currency">S$</span>64.95</p>
-          <p class="price__note">One price, every tip size included. Delivery fee and vouchers show at Shopee checkout. <a href="#pricing">See current offers</a></p>
         </div>
 
         <div class="buy-panel__actions">
@@ -207,47 +176,20 @@
           <p class="buy-panel__sizes"><strong>All 4 tip sizes (XS-L) in the box</strong>, in two tip types. <a href="product-guide.html#tip-finder">Find your starting size</a></p>
         </div>
 
-        <div class="trust-note">
+        <div class="trust-note" role="note">
+          <svg class="trust-note__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
           <p class="trust-note__title">Look for the Mall badge, lookalikes aren't Somnus</p>
           <p class="trust-note__text">We sell on Shopee Mall: 100% authentic guarantee and free 15-day returns.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== 2. Pricing and offers ===== -->
-    <section class="detail-section" id="pricing" aria-labelledby="pricing-title" data-reveal>
-      <h2 class="guide-section__title" id="pricing-title">How much do Somnus Sleep Earplugs cost in Singapore?</h2>
-      <p class="guide-section__lead">S$64.95, one-off, for the earplugs, the bedside case and every tip size. A set of tips lasts about 100 nights, which works out to around 65 cents a night.</p>
-      <ul class="offer-strip">
-        <li class="offer-strip__item glass" data-offer-ends="2026-11-11">
-          <span class="offer-strip__badge">11.11 Sale</span>
-          <p class="offer-strip__value">20% off</p>
-          <p class="offer-strip__text">Your first pair of Somnus Sleep Earplugs.</p>
-          <p class="offer-strip__date">Ends 11 Nov</p>
-        </li>
-        <li class="offer-strip__item glass" data-offer-ends="2026-12-12">
-          <span class="offer-strip__badge">12.12 Holiday</span>
-          <p class="offer-strip__value">Free travel case</p>
-          <p class="offer-strip__text">A Premium Travel Case with any pair.</p>
-          <p class="offer-strip__date">Ends 12 Dec</p>
-        </li>
-        <li class="offer-strip__item glass">
-          <span class="offer-strip__badge">The sleep set</span>
-          <p class="offer-strip__value">S$80</p>
-          <p class="offer-strip__text">Somnus Sleep Earplugs with a black sleep mask.</p>
-          <p class="offer-strip__date"><a href="shop.html#seasonal-offers">See all offers</a></p>
-        </li>
-      </ul>
-      <p class="detail-section__actions">
-        <a class="btn btn--primary" href="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342" target="_blank" rel="noopener">Buy now on Shopee</a>
-        <span class="detail-section__note">Offers apply on the live Shopee listing. Your final price shows at checkout.</span>
-      </p>
-    </section>
 
     <!-- ===== 3. Technical specifications ===== -->
     <section class="detail-section specs" id="specs" aria-labelledby="specs-title" data-reveal>
       <div class="specs__text">
-        <h2 class="guide-section__title" id="specs-title">Technical specifications</h2>
+        <span class="eyebrow">Technical specifications</span>
+        <h2 class="guide-section__title specs__headline" id="specs-title">Every layer, built for sleep.</h2>
         <p class="guide-section__lead">Somnus Sleep Earplugs are passive, reusable earplugs rated at 27 dB (SNR). They soften noise but do not silence it completely.</p>
         <table class="spec-table">
           <caption class="visually-hidden">Somnus Sleep Earplugs technical specifications</caption>
@@ -259,13 +201,11 @@
             <tr><th scope="row">Colours</th><td>Black, Blue, Lilac, Peach</td></tr>
             <tr><th scope="row">Power</th><td>None: no battery, no charging, no app</td></tr>
             <tr><th scope="row">Tip lifespan</th><td>Replace after about 100 nights</td></tr>
-            <tr><th scope="row">Returns</th><td>Free 15-day returns on Shopee Mall</td></tr>
-            <tr><th scope="row">Award</th><td>SleepTech 2024 Award</td></tr>
           </tbody>
         </table>
       </div>
       <figure class="specs__media">
-        <video class="specs__video" src="images/product1-video.mp4" autoplay muted loop playsinline preload="metadata" width="1080" height="1080" aria-label="A Somnus ear tip turning to show its flat, low-profile shape"></video>
+        <video class="specs__video" src="images/somnus-exploded-view.mp4" autoplay muted loop playsinline preload="metadata" width="2048" height="2048" aria-label="Exploded view of a Somnus Sleep Earplug, showing the loop body, stem and layered tip coming apart and back together"></video>
       </figure>
     </section>
 
@@ -273,14 +213,13 @@
     <section class="story" id="how-it-works" aria-labelledby="story-title" data-story>
       <div class="story__intro" data-reveal>
         <p class="story__eyebrow">The technology behind it</p>
-        <h2 class="story__title" id="story-title">How do Somnus Sleep Earplugs work?</h2>
-        <p class="story__lead">A soft silicone loop holds the earplug in place, and a two-layer tip seals your ear canal. Foam alone presses when you lie on it. Plain silicone slips. Somnus is built to do both jobs.</p>
+        <h2 class="story__title" id="story-title">How does it work?</h2>
       </div>
 
       <div class="story__visuals" aria-hidden="true">
         <img class="story__visual" data-story-visual="1" src="images/product/dream-component.webp" alt="" width="836" height="836" loading="lazy">
         <video class="story__visual" data-story-visual="2" src="images/product-detail-video.mp4" autoplay muted loop playsinline preload="metadata" width="1080" height="1080"></video>
-        <img class="story__visual" data-story-visual="3" src="images/product/dream-black-3.webp" alt="" width="1000" height="1000" loading="lazy">
+        <video class="story__visual" data-story-visual="3" src="images/product1-video.mp4" autoplay muted loop playsinline preload="metadata" width="1080" height="1080" aria-label="A Somnus ear tip turning to show its flat, low-profile shape"></video>
         <img class="story__visual" data-story-visual="4" src="images/product/dream-black-5.webp" alt="" width="1000" height="1000" loading="lazy">
       </div>
 
@@ -306,117 +245,28 @@
       <p class="story__more"><a class="link-arrow" href="product-guide.html">See the full fitting steps in the guide</a></p>
     </section>
 
-    <!-- ===== 5. Humidity: why foam fails here ===== -->
-    <section class="detail-section humidity" id="humidity" aria-labelledby="humidity-title" data-reveal>
-      <h2 class="guide-section__title" id="humidity-title">Why do foam earplugs fail in Singapore's humidity?</h2>
-      <p class="guide-section__lead">Open foam absorbs sweat and moist air, so it softens and loses its seal. Somnus keeps the memory foam wrapped in silicone, so the tip holds its shape through a warm, humid night.</p>
-      <div class="compare__scroll" role="region" aria-labelledby="humidity-title" tabindex="0">
-        <table class="compare__table">
-          <caption class="compare__caption">Somnus 7-day rebound test at 80% humidity</caption>
-          <thead>
-            <tr>
-              <th scope="col"><span class="visually-hidden">Measure after 7 nights</span></th>
-              <th scope="col">Disposable foam plugs</th>
-              <th scope="col" class="compare__col--featured">Somnus Foam-Silicone tip</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Shape recovered after squeezing</th><td>71%</td><td class="compare__col--featured">96%</td></tr>
-            <tr><th scope="row">Nights the seal lasted until morning</th><td>4 of 7</td><td class="compare__col--featured">7 of 7</td></tr>
-            <tr><th scope="row">Nights the tip felt damp by morning</th><td>5 of 7</td><td class="compare__col--featured">0 of 7</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="compare__footnote">Tested by the <a href="team.html">Somnus team</a> in a fan-cooled bedroom held at about 80% humidity, using one pair of each over 7 nights.</p>
-      <ul class="scenarios">
-        <li class="scenarios__item glass">
-          <h3 class="scenarios__title">Side-sleeping all night</h3>
-          <p>The flat ends sit flush with your ear, so there is less pressure on the pillow side by morning.</p>
-        </li>
-        <li class="scenarios__item glass">
-          <h3 class="scenarios__title">Fan-only bedrooms</h3>
-          <p>Silicone wipes clean and stays dry to the touch, even on nights without air-con.</p>
-        </li>
-        <li class="scenarios__item glass">
-          <h3 class="scenarios__title">Next to a snorer</h3>
-          <p>Soft snoring can fade out completely. Loud snoring stays noticeable, but much less intense.</p>
-        </li>
-      </ul>
-    </section>
 
     <!-- ===== 6. What's in the box ===== -->
     <section class="in-box" id="in-the-box" aria-labelledby="in-box-title" data-reveal>
+      <h2 class="in-box__title" id="in-box-title">What's in the box</h2>
+      <div class="in-box__text">
+        <ul class="in-box__list">
+          <li class="in-box__item glass"><svg class="in-box__icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><circle cx="12" cy="9" r="2.2"/><path d="M12 14.5V21"/></svg><p class="in-box__name">Earplugs</p><p class="in-box__detail">1 pair, size M tips fitted</p></li>
+          <li class="in-box__item glass"><svg class="in-box__icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h8l-1.5 9h-5z"/><path d="M10.5 14v6h3v-6"/></svg><p class="in-box__name">Foam-Silicone tips</p><p class="in-box__detail">XS, S, M, L</p></li>
+          <li class="in-box__item glass"><svg class="in-box__icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 4h7l-1 5h-5z"/><path d="M7.5 9h9l-1.5 6h-6z"/><path d="M10.5 15v5h3v-5"/></svg><p class="in-box__name">Double Tips</p><p class="in-box__detail">XS, S, M, L</p></li>
+          <li class="in-box__item glass"><svg class="in-box__icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="7" width="17" height="11" rx="4"/><path d="M3.5 11.5h17"/><path d="M10 18v1.5h4V18"/></svg><p class="in-box__name">Bedside case</p><p class="in-box__detail">Non-slip base</p></li>
+        </ul>
+      </div>
       <figure class="in-box__media">
         <img class="in-box__img" src="images/product/dream-packaging.webp" alt="The Somnus box opened to show the earplugs in their case and a tray of spare ear tips in several sizes" width="1000" height="1000" loading="lazy">
       </figure>
-      <div class="in-box__text">
-        <h2 class="in-box__title" id="in-box-title">What's in the box</h2>
-        <ul class="in-box__list">
-          <li class="in-box__item glass">1 pair of Somnus Sleep Earplugs</li>
-          <li class="in-box__item glass">Foam-Silicone tips in XS, S, M, L (size M comes fitted)</li>
-          <li class="in-box__item glass">Double Tips in XS, S, M, L</li>
-          <li class="in-box__item glass">Bedside case with a non-slip base</li>
-        </ul>
-        <p class="in-box__note">None of the 8 sizes feel right? Try a different size in each ear, then <a href="contact.html?topic=sizing">ask us for fit help</a>.</p>
-      </div>
     </section>
 
-    <!-- ===== 7. Comparison table ===== -->
-    <section class="compare" id="compare" aria-labelledby="compare-title" data-reveal>
-      <h2 class="compare__title" id="compare-title">What are the best sleep earplugs for side sleepers in Singapore?</h2>
-      <p class="compare__lead">Foam blocks more on paper, and electronic earbuds cost far more. Somnus is the one made to lie on night after night.</p>
-      <div class="compare__scroll" role="region" aria-labelledby="compare-title" tabindex="0">
-        <table class="compare__table">
-          <caption class="compare__caption">How Somnus compares with foam earplugs and electronic sleep earbuds</caption>
-          <thead>
-            <tr>
-              <th scope="col"><span class="visually-hidden">Feature</span></th>
-              <th scope="col">Foam earplugs</th>
-              <th scope="col" class="compare__col--featured">Somnus</th>
-              <th scope="col">Electronic sleep earbuds</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Price</th>
-              <td>Under S$1 a pair, thrown away after use</td>
-              <td class="compare__col--featured">S$64.95, one-off</td>
-              <td>S$300+</td>
-            </tr>
-            <tr>
-              <th scope="row">Comfort on your side</th>
-              <td>Can press and get sore over a night</td>
-              <td class="compare__col--featured">Flat ends sit flush with your ear</td>
-              <td>Often bulkier; varies by model</td>
-            </tr>
-            <tr>
-              <th scope="row">Reusable</th>
-              <td>No</td>
-              <td class="compare__col--featured">Yes, wipe clean and reuse</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <th scope="row">Battery or charging</th>
-              <td>None</td>
-              <td class="compare__col--featured">None</td>
-              <td>Needs charging</td>
-            </tr>
-            <tr>
-              <th scope="row">Noise reduction</th>
-              <td>About 32-37 dB (rated)</td>
-              <td class="compare__col--featured">27 dB SNR</td>
-              <td>Varies; many play masking sound</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="compare__footnote">dB ratings use different tests (SNR, NRR), so they are a guide, not a like-for-like score.</p>
-    </section>
 
     <!-- ===== 8. Final CTA ===== -->
     <section class="cta-band glass" aria-labelledby="cta-title" data-reveal>
       <h2 class="cta-band__title" id="cta-title">Ready for quieter nights?</h2>
-      <p class="cta-band__text">S$64.95 with all 4 tip sizes, in stock in Singapore. Not sure about your size? <a href="product-guide.html#tip-finder">Find it in 3 questions</a>.</p>
+      
       <a class="btn btn--primary" href="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342" target="_blank" rel="noopener">Buy now </a>
     </section>
 

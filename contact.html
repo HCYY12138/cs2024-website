@@ -96,44 +96,20 @@
   <main id="main" class="main" tabindex="-1">
 
     <section class="contact-hero" aria-labelledby="contact-title">
-      <h1 class="contact-hero__title" id="contact-title">How can we help?</h1>
-      <p class="contact-hero__lead">Most questions are about fit. Try the quick answers first, or send us a message below.</p>
+      <h1 class="contact-hero__title" id="contact-title">Contact Us</h1>
     </section>
 
-    <!-- ===== Quick-help cards (first, before the form) ===== -->
-    <section class="quick-help" aria-labelledby="quick-help-title" data-reveal>
-      <h2 class="quick-help__title" id="quick-help-title">Quick answers</h2>
-      <ul class="quick-help__list">
-        <li class="quick-help__item">
-          <article class="help-card glass">
-            <h3 class="help-card__title"><a class="help-card__link" href="product-guide.html#tip-finder">Sore ears or a leaky seal?</a></h3>
-            <p class="help-card__text">Find your starting tip size in three questions, and what to try if it still doesn't fit.</p>
-          </article>
-        </li>
-        <li class="quick-help__item">
-          <article class="help-card glass">
-            <h3 class="help-card__title"><a class="help-card__link" href="faq-reviews.html">Common questions</a></h3>
-            <p class="help-card__text">Alarms, cleaning, snoring, and how Somnus compares with foam.</p>
-          </article>
-        </li>
-        <li class="quick-help__item">
-          <article class="help-card glass">
-            <h3 class="help-card__title"><a class="help-card__link" href="https://shopee.sg/Loop-Dream-%E2%80%93-Silicone-Memory-Foam-Earplugs-for-Sleep-Comfort-Comfortable-Ear-Plugs-for-Snoring-Blocking-Sleeping-Customized-Fit-27dB-(SNR)-Noise-Reduction-i.931327381.41857607342" target="_blank" rel="noopener">Orders and returns <span class="help-card__hint">opens Shopee Mall</span></a></h3>
-            <p class="help-card__text">Track an order or start a free 15-day return in your Shopee app. Shopee Mall handles delivery and refunds.</p>
-          </article>
-        </li>
-      </ul>
-    </section>
+  
 
     <!-- ===== Contact form + details ===== -->
     <section class="contact" aria-labelledby="form-title" data-reveal>
       <div class="contact__form-wrap glass">
         <h2 class="contact__title" id="form-title">Send us a message</h2>
-        <p class="contact__note">All fields are required unless marked optional.</p>
+        <p class="contact__reply">We reply within 1 working day.</p>
 
         <form class="contact-form form" id="contact-form" action="#contact-form" method="post" data-validate
               data-success="Thanks, your message is in. We'll reply by email within 1 working day.">
-          <!-- PLACEHOLDER: front-end only; nothing is sent. Connect a form service before launch, and update the success message if reply times change. -->
+          <!-- PLACEHOLDER: front-end only; nothing is sent. -->
           <div class="form__field">
             <label class="form__label" for="contact-name">Name</label>
             <input class="form__input" id="contact-name" name="name" type="text" autocomplete="name" required
@@ -199,23 +175,19 @@
 
       <aside class="contact-details glass" aria-labelledby="details-title">
         <h2 class="contact-details__title" id="details-title">Other ways to reach us</h2>
-        <!-- PLACEHOLDER: hello@somnus.sg, WhatsApp +65 0000 0000, the address and the reply time are stand-ins; replace before launch -->
+       
         <dl class="contact-details__list">
           <div class="contact-details__row">
-            <dt class="contact-details__term">Email</dt>
+            <dt class="contact-details__term"><svg class="contact-details__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</dt>
             <dd class="contact-details__value"><a href="mailto:hello@somnus.sg">hello@somnus.sg</a></dd>
           </div>
           <div class="contact-details__row">
-            <dt class="contact-details__term">WhatsApp</dt>
-            <dd class="contact-details__value"><a href="https://wa.me/6500000000" target="_blank" rel="noopener">+65 0000 0000 <span class="contact-details__hint">opens WhatsApp</span></a></dd>
+            <dt class="contact-details__term"><svg class="contact-details__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Phone</dt>
+            <dd class="contact-details__value"><a href="https://wa.me/6500000000" target="_blank" rel="noopener">+65 0000 0000</a></dd>
           </div>
           <div class="contact-details__row">
-            <dt class="contact-details__term">Address</dt>
-            <dd class="contact-details__value"><address>Somnus, Singapore</address></dd>
-          </div>
-          <div class="contact-details__row">
-            <dt class="contact-details__term">Reply time</dt>
-            <dd class="contact-details__value">We reply within 1 working day.</dd>
+            <dt class="contact-details__term"><svg class="contact-details__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Address</dt>
+            <dd class="contact-details__value"><address>116 Commonwealth Crescent, Singapore S140116</address></dd>
           </div>
         </dl>
       </aside>
