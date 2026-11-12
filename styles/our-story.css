@@ -35,7 +35,6 @@
 }
 .story-hero h1 {
   max-width:760px;
-  font-size:clamp(3.2rem,6.2vw,6.2rem);
 }
 .story-hero .lead {
   max-width:520px;
