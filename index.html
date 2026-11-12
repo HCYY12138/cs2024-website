@@ -45,7 +45,7 @@
         <div class="actions"><a class="button dark" href="shop.html">Explore earplugs <span aria-hidden="true">↗</span></a><a class="text-link" href="why-choose-us.html">How we choose <span aria-hidden="true">→</span></a></div>
       </div>
       <div class="hero-art">
-        <img src="images/product/dream-black-1.png">
+        <video id="hero-video" src="images/somnus_indexhtml_loop.mp4" autoplay loop muted playsinline preload="auto" aria-label="Somnus sleep earplugs"></video>
       </div>
     </section>
     <div class="trust-strip" aria-label="What this website helps you do">
@@ -134,5 +134,18 @@
       </div>
     </div>
   </footer>
+<script>
+(function () {
+  var v = document.getElementById('hero-video');
+  if (!v) return;
+  v.muted = true;
+  v.loop = true;
+  function restart() { try { v.currentTime = 0; } catch (e) {} var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  v.addEventListener('ended', restart);
+  v.addEventListener('pause', function () { if (!document.hidden && !v.ended) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) restart(); });
+  restart();
+})();
+</script>
 </body>
 </html>
