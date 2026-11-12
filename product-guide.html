@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>How to Wear Somnus Sleep Earplugs &amp; Find Your Tip Size | Singapore</title>
   <link rel="icon" type="image/png" href="images/ear-mark.png">
-  <meta name="description" content="How to wear Somnus Sleep Earplugs: insert, press for 5 seconds and find your tip size. Plus what 27 dB does for HDB neighbour noise, cleaning and tip care.">
+  <meta name="description" content="How to wear Somnus Sleep Earplugs: find your tip size in 3 questions, insert and press for 5 seconds, then ease into it over 3 nights. Cleaning and tip care included.">
   <link rel="canonical" href="https://gooffries.github.io/cs2024-website/product-guide.html">
 
   <meta property="og:type" content="article">
@@ -20,6 +20,12 @@
   <meta name="twitter:title" content="Somnus fit guide and tip-size finder | Somnus">
   <meta name="twitter:description" content="Find your starting tip size and wear Somnus comfortably on your side.">
   <meta name="twitter:image" content="https://gooffries.github.io/cs2024-website/images/product/dream-packaging.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&amp;display=swap">
 
   <link rel="stylesheet" href="styles/site.css">
   <script src="js/main.js" defer></script>
@@ -36,10 +42,9 @@
     ],
     "step": [
       { "@type": "HowToStep", "position": 1, "name": "Pick your tip", "text": "Start with the size M tip already fitted, or the size the tip-size finder suggests. Each ear can take a different size.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-1" },
-      { "@type": "HowToStep", "position": 2, "name": "Open your ear", "text": "Hold the earplug with the tip facing you, then pull the back of your ear to open the ear canal.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-2" },
-      { "@type": "HowToStep", "position": 3, "name": "Insert gently", "text": "Gently insert the tip into your ear. There is no need to twist.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-3" },
-      { "@type": "HowToStep", "position": 4, "name": "Press for 5 seconds", "text": "Gently press on the earplug for 5 seconds to create the seal. Do not push it in too deep.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-4" },
-      { "@type": "HowToStep", "position": 5, "name": "Check the seal", "text": "Move your jaw from side to side. If the earplug stays put and your own voice sounds louder, it is sealed.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-5" }
+      { "@type": "HowToStep", "position": 2, "name": "Open and insert", "text": "Pull the back of your ear to open the canal, then slide the tip in. No need to roll or twist.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-2" },
+      { "@type": "HowToStep", "position": 3, "name": "Press and check the seal", "text": "Press gently for 5 seconds. Move your jaw side to side: if it stays put and your voice sounds louder, you are sealed.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-3" },
+      { "@type": "HowToStep", "position": 4, "name": "Take them out", "text": "Grip the loop, twist gently to break the seal, then ease it out slowly. Never yank.", "url": "https://gooffries.github.io/cs2024-website/product-guide.html#step-4" }
     ]
   }
   </script>
@@ -60,14 +65,14 @@
   <!-- ===== Shared header (identical on every page; only aria-current moves) ===== -->
   <header class="site-header" data-site-header>
     <nav class="navbar glass" aria-label="Main">
+      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+        <span class="navbar__toggle-icon" aria-hidden="true"></span>
+        <span class="navbar__toggle-label visually-hidden">Menu</span>
+      </button>
       <a class="navbar__logo" href="index.html">
         <img class="navbar__logo-img" src="images/ear-mark.png" alt="Somnus home" width="120" height="32">
         <span class="navbar__logo-text" aria-hidden="true">Somnus</span>
       </a>
-      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
-        <span class="navbar__toggle-icon" aria-hidden="true"></span>
-        <span class="navbar__toggle-label">Menu</span>
-      </button>
       <div class="navbar__menu" id="site-menu">
         <ul class="navbar__links">
           <li class="navbar__item"><a class="navbar__link" href="shop.html">Shop</a></li>
@@ -85,42 +90,22 @@
 
     <!-- ===== Guide hero ===== -->
     <section class="guide-hero" aria-labelledby="guide-title">
+      <img class="guide-hero__bg" src="images/guide/hero-in-ear.webp" alt="" width="2000" height="2000" fetchpriority="high">
       <p class="guide-hero__eyebrow">Somnus fit guide</p>
-      <h1 class="guide-hero__title" id="guide-title">How to wear Somnus Sleep Earplugs</h1>
-      <p class="guide-hero__lead">Start with the size M tips already fitted. Pull your ear back, insert gently with no twist, then press for 5 seconds. Too loose? Go up a size. Too tight? Go down a size.</p>
-      <p class="guide-hero__byline">Written and tested by the <a href="team.html">Somnus team</a> in Singapore. Updated November 2026.</p>
+      <h1 class="guide-hero__title" id="guide-title">Your perfect fit</h1>
+      <p class="guide-hero__lead">Find your tip size in 3 questions, then wear them in 4 steps.</p>
       <p class="guide-hero__actions">
-        <a class="btn btn--primary" href="#tip-finder">Find my tip size</a>
+        <a class="btn btn--primary" href="#tip-finder">Find my size</a>
         <a class="link-arrow" href="#how-to-wear">Skip to wearing steps</a>
       </p>
     </section>
 
-    <!-- ===== In-page anchor nav (JS highlights the section in view) ===== -->
-    <nav class="guide-nav glass" aria-label="On this page" data-guide-nav>
-      <ol class="guide-nav__list">
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#how-to-wear">How to wear</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#tip-finder">Tip-size finder</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#removal">Removal</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#what-you-hear">What you'll hear</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#three-nights">Give it 3 nights</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#care">Care &amp; cleaning</a></li>
-        <li class="guide-nav__item"><a class="guide-nav__link" href="#replacing">Replacing tips</a></li>
-      </ol>
-    </nav>
 
-    <!-- ===== 1. How to wear ===== -->
+    <!-- ===== 1. Wearing & removing ===== -->
     <section class="guide-section guide-section--wear" id="how-to-wear" aria-labelledby="wear-title" data-reveal>
-      <h2 class="guide-section__title" id="wear-title">How to wear Somnus</h2>
-      <p class="guide-section__lead">Takes about a minute the first time. Each ear can need a different size.</p>
-
-      <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/how-to-wear-poster.webp">
-          <source src="images/guide/how-to-wear.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: fitting your earplugs step by step</figcaption>
-      </figure>
-
-      <ol class="steps">
+      <h2 class="guide-section__title" id="wear-title">How to wear</h2>
+    
+      <ol class="steps steps--four">
         <li class="steps__item glass" id="step-1">
           <figure class="steps__media">
             <img class="steps__img" src="images/guide/step-1-pick-tip.webp" alt="Fingers holding two Somnus ear tips side by side to compare sizes" width="828" height="364" loading="lazy">
@@ -130,31 +115,24 @@
         </li>
         <li class="steps__item glass" id="step-2">
           <figure class="steps__media">
-            <img class="steps__img" src="images/guide/step-2-open-ear.webp" alt="A hand pulling the back of the ear to open the ear canal for a sleep earplug" width="900" height="506" loading="lazy">
+            <img class="steps__img" src="images/guide/step-3-insert.webp" alt="A Somnus sleep earplug going gently into the ear with no twist" width="900" height="506" loading="lazy">
           </figure>
-          <h3 class="steps__title">Open your ear</h3>
-          <p class="steps__text">Hold the earplug with the tip facing you, then pull the back of your ear to open the ear canal.</p>
+          <h3 class="steps__title">Open and insert</h3>
+          <p class="steps__text">Pull the back of your ear to open the canal, then slide the tip in. Unlike foam plugs, no need to roll or twist.</p>
         </li>
         <li class="steps__item glass" id="step-3">
           <figure class="steps__media">
-            <img class="steps__img" src="images/guide/step-3-insert.webp" alt="A Somnus sleep earplug going gently into the ear with no twist" width="900" height="506" loading="lazy">
+            <img class="steps__img" src="images/guide/step-4-press.webp" alt="A finger pressing a Somnus sleep earplug for 5 seconds to create the seal" width="900" height="506" loading="lazy">
           </figure>
-          <h3 class="steps__title">Insert gently</h3>
-          <p class="steps__text">Slide the tip into your ear. Unlike foam plugs, there is no need to roll or twist it.</p>
+          <h3 class="steps__title">Press and check the seal</h3>
+          <p class="steps__text">Press gently for 5 seconds. Move your jaw side to side: if it stays put and your voice sounds louder, you are sealed. Sticking out? Go down a size.</p>
         </li>
         <li class="steps__item glass" id="step-4">
           <figure class="steps__media">
-            <img class="steps__img" src="images/guide/step-4-press.webp" alt="A finger pressing a Somnus sleep earplug for 5 seconds to create the seal" width="900" height="506" loading="lazy">
+            <img class="steps__img" src="images/guide/carry-case-poster.webp" alt="Somnus sleep earplugs going back into their carry case after removal" width="900" height="506" loading="lazy">
           </figure>
-          <h3 class="steps__title">Press for 5 seconds</h3>
-          <p class="steps__text">Press gently on the earplug for 5 seconds to create the seal. Do not push it in too deep.</p>
-        </li>
-        <li class="steps__item glass" id="step-5">
-          <figure class="steps__media">
-            <img class="steps__img" src="images/guide/step-5-check-seal.webp" alt="Side-by-side view of a correctly seated earplug and one sticking out of the ear" width="900" height="506" loading="lazy">
-          </figure>
-          <h3 class="steps__title">Check the seal</h3>
-          <p class="steps__text">Move your jaw from side to side. If it stays put and your own voice sounds louder, you are sealed. Sticking out? Reposition it or go down a size.</p>
+          <h3 class="steps__title">Take them out</h3>
+          <p class="steps__text">Grip the loop, twist gently to break the seal, then ease it out slowly. Never yank: that can pull the tip off.</p>
         </li>
       </ol>
     </section>
@@ -162,7 +140,7 @@
     <!-- ===== 2. Tip-size finder (interactive; works as a static guide without JS) ===== -->
     <section class="guide-section tip-finder" id="tip-finder" aria-labelledby="finder-title" data-reveal>
       <h2 class="guide-section__title" id="finder-title">Tip-size finder</h2>
-      <p class="guide-section__lead">Answer three quick questions for a starting size. All 4 sizes (XS, S, M, L) come in the box in both tip types, so you can change your mind.</p>
+      <p class="guide-section__lead">Answer three quick questions for a starting size. All 4 sizes (XS, S, M, L) come in the box in both tip types in case you change your mind.</p>
 
       <form class="tip-finder__form glass" action="#tip-finder" method="get" data-tip-finder>
         <div class="tip-finder__grid">
@@ -193,97 +171,16 @@
               <option value="seal">Firmest seal against snoring</option>
             </select>
           </div>
-          <div class="tip-finder__answer" aria-live="polite" data-tip-result>
-            <p class="tip-finder__answer-label">Your starting size</p>
-            <p class="tip-finder__answer-value"><span class="tip-finder__size" data-tip-size>?</span> <span class="tip-finder__type" data-tip-type>Answer all 3</span></p>
-          </div>
+        </div>
+        <div class="tip-finder__answer" aria-live="polite" data-tip-result>
+          <p class="tip-finder__answer-label">Your starting size</p>
+          <p class="tip-finder__answer-value"><span data-tip-value>Answer all 3 questions</span> <a class="tip-finder__shop" href="product-detail.html" data-tip-shop hidden>Shop now</a></p>
         </div>
         <p class="tip-finder__why" data-tip-why hidden></p>
       </form>
-
-      <div class="tip-finder__rules">
-        <h3 class="tip-finder__rules-title">Rule of thumb</h3>
-        <ul class="tip-finder__rules-list">
-          <li>Feel loose or fall out? Try a larger size. Too tight or sticking out? Go down a size.</li>
-          <li>One ear feels different? Use a different size in each ear.</li>
-          <li>Foam-Silicone tip for the softest feel; Double Tip for a firmer seal.</li>
-          <li>Still not fitting after 3 nights? <a href="contact.html?topic=sizing">Contact us for fit help</a>.</li>
-        </ul>
-      </div>
-
-      <div class="video-pair">
-        <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/find-your-size-poster.webp">
-          <source src="images/guide/find-your-size.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: how to find your size</figcaption>
-      </figure>
-        <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/change-tips-poster.webp">
-          <source src="images/guide/change-tips.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: how to change your ear tips</figcaption>
-      </figure>
-      </div>
     </section>
 
-    <!-- ===== 3. Removal ===== -->
-    <section class="guide-section guide-section--removal" id="removal" aria-labelledby="removal-title" data-reveal>
-      <h2 class="guide-section__title" id="removal-title">Taking them out</h2>
-      <p class="guide-section__lead">The flat ends sit close to your ear, so ease them out instead of pulling.</p>
-      <ol class="steps steps--compact">
-        <li class="steps__item glass">
-          <h3 class="steps__title">Grip the loop</h3>
-          <p class="steps__text">Hold the loop between your thumb and finger.</p>
-        </li>
-        <li class="steps__item glass">
-          <h3 class="steps__title">Twist to break the seal</h3>
-          <p class="steps__text">Twist it gently back and forth to let air in.</p>
-        </li>
-        <li class="steps__item glass">
-          <h3 class="steps__title">Ease it out slowly</h3>
-          <p class="steps__text">Draw it out slowly. Never yank: that can pull the tip off or hurt.</p>
-        </li>
-      </ol>
-      <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/carry-case-poster.webp">
-          <source src="images/guide/carry-case.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: where your earplugs go once they are out</figcaption>
-      </figure>
-    </section>
 
-    <!-- ===== 4. What you'll hear ===== -->
-    <section class="guide-section" id="what-you-hear" aria-labelledby="hear-title" data-reveal>
-      <h2 class="guide-section__title" id="hear-title">Neighbour noise and cannot sleep? What 27 dB does in an HDB flat</h2>
-      <p class="guide-section__lead">Somnus Sleep Earplugs turn most flat noise down to a murmur, but they do not silence it. Soft sounds mostly disappear, medium sounds turn faint, and loud sounds stay audible at a much lower volume.</p>
-      <div class="compare__scroll" role="region" aria-labelledby="hear-title" tabindex="0">
-        <table class="compare__table">
-          <caption class="compare__caption">Noise measured in a Singapore HDB bedroom, with and without earplugs</caption>
-          <thead>
-            <tr>
-              <th scope="col">Noise source</th>
-              <th scope="col">Measured in the bedroom</th>
-              <th scope="col" class="compare__col--featured">With Somnus (estimate)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Neighbour's TV through the wall</th><td>46 dB</td><td class="compare__col--featured">About 19 dB</td></tr>
-            <tr><th scope="row">Corridor chatter</th><td>54 dB</td><td class="compare__col--featured">About 27 dB</td></tr>
-            <tr><th scope="row">Traffic or MRT outside the window</th><td>61 dB</td><td class="compare__col--featured">About 34 dB</td></tr>
-            <tr><th scope="row">Partner snoring next to you</th><td>68 dB</td><td class="compare__col--featured">About 41 dB</td></tr>
-            <tr><th scope="row">Renovation drilling next door</th><td>84 dB</td><td class="compare__col--featured">About 57 dB</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="compare__footnote">Measured by the <a href="team.html">Somnus team</a> with a phone sound meter in a 4-room HDB flat in Toa Payoh. Estimates subtract the 27 dB SNR rating, so your result will vary with fit.</p>
-      <ul class="expectations__list guide-section__list">
-        <li class="expectations__item">Your alarm should still get through, but test it on your first night to be sure.</li>
-        <li class="expectations__item">Sirens, barking dogs and fireworks stay audible at a much lower volume.</li>
-        <li class="expectations__item">Loud snoring can reach 100 dB, so it stays noticeable, but much less intense.</li>
-      </ul>
-      <p class="guide-section__cta"><a class="link-arrow" href="product-detail.html#specs">See the full specifications of Somnus Sleep Earplugs</a></p>
-    </section>
 
     <!-- ===== 5. Give it 3 nights ===== -->
     <section class="guide-section three-nights" id="three-nights" aria-labelledby="nights-title" data-reveal>
@@ -293,7 +190,7 @@
         <ol class="three-nights__list">
           <li class="three-nights__night">
             <h3 class="three-nights__night-title">Night 1</h3>
-            <p>Wear them for 20 minutes while you read in bed, then sleep in them.</p>
+            <p>Wear them for 20 minutes while you read in bed, and check that you can hear your phone alarm, then sleep in them.</p>
           </li>
           <li class="three-nights__night">
             <h3 class="three-nights__night-title">Night 2</h3>
@@ -310,59 +207,37 @@
     <!-- ===== 6. Care & cleaning ===== -->
     <section class="guide-section guide-section--care" id="care" aria-labelledby="care-title" data-reveal>
       <h2 class="guide-section__title" id="care-title">Care &amp; cleaning</h2>
-      <p class="guide-section__lead">Reusable means a quick clean, not a new pair every night.</p>
+      <p class="guide-section__lead">Reusable earplugs only require a quick clean, not a new pair every night.</p>
       <ol class="care-steps">
         <li class="care-steps__item glass">
+          <figure class="care-steps__media"><img src="images/guide/change-tips-poster.webp" alt="Ear tips being taken off a Somnus earplug" width="900" height="506" loading="lazy"></figure>
           <h3 class="care-steps__title">Take the tips off</h3>
           <p>Gently remove the ear tips from the earplug body before you clean them.</p>
         </li>
         <li class="care-steps__item glass">
+          <figure class="care-steps__media"><img src="images/guide/how-to-clean-poster.webp" alt="Wiping a Somnus earplug clean with a damp cloth" width="900" height="506" loading="lazy"></figure>
           <h3 class="care-steps__title">Wipe, don't soak</h3>
           <p>Wipe the body and tips with a damp cloth. Never submerge the tips, and avoid harsh chemicals and sharp objects.</p>
         </li>
         <li class="care-steps__item glass">
+          <figure class="care-steps__media"><img src="images/guide/fix-foam-tip-poster.webp" alt="A Somnus ear tip with its foam and silicone in place after drying" width="900" height="506" loading="lazy"></figure>
           <h3 class="care-steps__title">Dry fully</h3>
           <p>Let everything air-dry completely before you reattach the tips. This matters more in humid weather.</p>
         </li>
         <li class="care-steps__item glass">
+          <figure class="care-steps__media"><img src="images/guide/carry-case-poster.webp" alt="Somnus earplugs stored in their bedside carry case" width="900" height="506" loading="lazy"></figure>
           <h3 class="care-steps__title">Store in the case</h3>
-          <p>Keep them in the bedside case, and don't share earplugs, even with your partner.</p>
+          <p>Keep them in the case by your bed or in your bag when you travel, and don't share earplugs, even with your partner.</p>
         </li>
       </ol>
-      <div class="video-pair">
-        <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/how-to-clean-poster.webp">
-          <source src="images/guide/how-to-clean.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: how to clean your earplugs</figcaption>
-      </figure>
-        <figure class="video-slot glass">
-        <video class="video-slot__video" controls preload="none" playsinline width="960" height="540" poster="images/guide/fix-foam-tip-poster.webp">
-          <source src="images/guide/fix-foam-tip.mp4" type="video/mp4">
-        </video>
-        <figcaption class="video-slot__caption">Watch: what to do if the foam bulges out</figcaption>
-      </figure>
-      </div>
+      <p class="care-note" id="replacing"><strong>Replacing tips:</strong> swap them after about 100 nights, or sooner if the foam stops springing back, the silicone tears or the seal is gone. <a href="product-detail.html">Get new tips</a>.</p>
     </section>
 
-    <!-- ===== 7. Replacing tips ===== -->
-    <section class="guide-section replace" id="replacing" aria-labelledby="replace-title" data-reveal>
-      <h2 class="guide-section__title" id="replace-title">Replacing tips</h2>
-      <div class="replace__card glass">
-        <p class="replace__lead">Replace your ear tips after about 100 nights, because memory foam slowly loses its shape. Change them sooner if:</p>
-        <ul class="replace__signs">
-          <li>the foam no longer springs back after you squeeze it</li>
-          <li>the silicone tears or starts to separate from the foam</li>
-          <li>the seal you used to get is gone, even at the same size</li>
-        </ul>
-        <p class="replace__timing">Silicone folded over the tip? That is not damage. Unroll it and roll it back over the foam. For new tips, <a href="contact.html?topic=sizing">contact us</a> or see <a href="product-detail.html#pricing">current offers</a>.</p>
-      </div>
-    </section>
 
     <!-- ===== CTA back to product ===== -->
     <section class="cta-band glass" aria-labelledby="cta-title" data-reveal>
-      <h2 class="cta-band__title" id="cta-title">Haven't got a pair yet?</h2>
-      <p class="cta-band__text">S$64.95, with all 4 tip sizes in both tip types in the box.</p>
+      <h2 class="cta-band__title" id="cta-title">Got your pair yet?</h2>
+      <p class="cta-band__text">S$64.95, with all 4 tip sizes in both tip types included in the box.</p>
       <a class="btn btn--primary" href="product-detail.html">See Somnus Sleep Earplugs</a>
     </section>
 

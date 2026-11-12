@@ -6,6 +6,9 @@
   <meta name="description" content="Choose your Somnus Earplugs colour, then check the current price, availability and seller terms on the live marketplace listing.">
   <title>Shop Earplugs | Somnus</title>
   <link rel="icon" type="image/png" href="images/ear-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&amp;display=swap">
   <link rel="stylesheet" href="styles/site.css">
   <link rel="stylesheet" href="styles/shop.css">
   <link rel="stylesheet" href="styles/animations.css">
@@ -17,14 +20,14 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-site-header>
     <nav class="navbar glass" aria-label="Main">
+      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+        <span class="navbar__toggle-icon" aria-hidden="true"></span>
+        <span class="navbar__toggle-label visually-hidden">Menu</span>
+      </button>
       <a class="navbar__logo" href="index.html">
         <img class="navbar__logo-img" src="images/ear-mark.png" alt="Somnus home" width="120" height="32">
         <span class="navbar__logo-text" aria-hidden="true">Somnus</span>
       </a>
-      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
-        <span class="navbar__toggle-icon" aria-hidden="true"></span>
-        <span class="navbar__toggle-label">Menu</span>
-      </button>
       <div class="navbar__menu" id="site-menu">
         <ul class="navbar__links">
           <li class="navbar__item"><a class="navbar__link" href="shop.html" aria-current="page">Shop</a></li>
@@ -44,7 +47,7 @@
         <header class="shop-hero">
           <div class="shop-hero__copy reveal">
             <p class="shop-hero__eyebrow">A little more calm, for less</p>
-            <h1 id="shop-title">What We Offer</h1>
+            <h1 id="shop-title">Quiet Nights Start Here — Shop Somnus in Singapore</h1>
             <p class="shop-hero__lead">Explore our limited-time seasonal offers and find a little extra reason to make room for quieter nights.</p>
             <a class="button dark" href="#seasonal-offers">Explore seasonal offers <span aria-hidden="true">↓</span></a>
           </div>
@@ -88,6 +91,23 @@
                 <p class="shop-offer__description">Buy any earplugs and get a FREE Premium Travel Case for easier, more peaceful nights away.</p>
                 <div class="shop-offer__footer">
                   <p class="shop-offer__date">Ends 12 Dec</p>
+                  <a class="button dark" href="product-detail.html">
+                    See product detail
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="shop-offer shop-offer--student reveal" id="offer-student" tabindex="-1">
+              <div class="shop-offer__visual">
+                <img src="images/product/dream-peach-1.png" alt="Peach Loop Dream sleep earplugs" width="1000" height="1000" loading="lazy">
+              </div>
+              <div class="shop-offer__content">
+                <span class="shop-offer__badge">Uni Student Discount</span>
+                <h3>Late-night study, early-morning rest.</h3>
+                <p class="shop-offer__value">Extra 10% <span>OFF</span></p>
+                <p class="shop-offer__description">University students get an extra 10% off year-round. Stack it with our 11.11 or 12.12 holiday deal for even more savings. Just show a valid student ID or uni email.</p>
+                <div class="shop-offer__footer">
+                  <p class="shop-offer__date">Stacks with holiday deals</p>
                   <a class="button dark" href="product-detail.html">
                     See product detail
                   </a>
@@ -141,7 +161,7 @@
                 <dt>In the box</dt>
                 <dd>1 pair of earplugs, 1 bedside case, 4 Foam-Silicone tips and 4 sets of Double Tips.</dd>
               </div>
-            
+            </dl>
           </div>
       </section>
 
@@ -152,29 +172,21 @@
             <p><strong>S$64.95</strong><span>Singapore listing</span></p>
           </div>
           <div class="shop-assurance">
-            <span class="shop-assurance__icon" aria-hidden="true">$</span>
-            <p><strong>A$69.95</strong><span>Australia example</span></p>
-          </div>
-          <div class="shop-assurance">
             <span class="shop-assurance__icon" aria-hidden="true">↩</span>
-            <p><strong>Up to 100 days</strong><span>Returns in eligible regions</span></p>
+            <p><strong>Free 15-day returns</strong><span>On the Singapore Shopee listing</span></p>
           </div>
-          <div class="shop-assurance">
-            <span class="shop-assurance__icon" aria-hidden="true">✓</span>
-            <p><strong>Up to 2 years</strong><span>Warranty in select regions</span></p>
-          </div>
-          <p class="shop-assurances__note">Prices and policies vary by market. The Singapore Shopee listing currently states free 15-day returns; check the local listing for final price, return eligibility and warranty terms.</p>
+          <p class="shop-assurances__note">Check the Shopee listing for the final price and return eligibility at checkout.</p>
         </section>
 
         <section class="shop-feedback" aria-labelledby="shop-feedback-title">
           <header class="shop-feedback__head reveal">
-            <p class="shop-feedback__eyebrow">User-reported results</p>
+            <p class="shop-feedback__eyebrow">Somnus user-reported results</p>
             <h2 id="shop-feedback-title">Rest can feel different.</h2>
           </header>
           <div class="shop-feedback__grid">
             <article class="shop-feedback__stat">
               <p class="shop-feedback__value">91%</p>
-              <p>said Somnus improved their sleep quality</p>
+              <p>said Somnus sleep earplugs improved their sleep quality</p>
             </article>
             <article class="shop-feedback__stat">
               <p class="shop-feedback__value">87%</p>
@@ -185,7 +197,7 @@
               <p>said they felt better rested after use</p>
             </article>
           </div>
-          <p class="shop-feedback__note">Figures cited from official user feedback. Survey methodology and results may vary; individual experiences differ.</p>
+
         </section>
 
         <section class="shop-purchase" id="purchase-options" aria-labelledby="shop-purchase-title">
@@ -218,7 +230,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer class="footer">
     <div class="wrap">
       <div class="footer-top">
