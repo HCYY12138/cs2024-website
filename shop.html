@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Choose your Somnus Sleepbuds colour, then check the current price, availability and seller terms on the live marketplace listing.">
-  <title>Shop Sleepbuds | Somnus</title>
+  <meta name="description" content="Choose your Somnus Earplugs colour, then check the current price, availability and seller terms on the live marketplace listing.">
+  <title>Shop Earplugs | Somnus</title>
   <link rel="icon" type="image/png" href="images/ear-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&amp;display=swap">
   <link rel="stylesheet" href="styles/site.css">
   <link rel="stylesheet" href="styles/shop.css">
   <link rel="stylesheet" href="styles/animations.css">
@@ -17,24 +20,24 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-site-header>
     <nav class="navbar glass" aria-label="Main">
+      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+        <span class="navbar__toggle-icon" aria-hidden="true"></span>
+        <span class="navbar__toggle-label visually-hidden">Menu</span>
+      </button>
       <a class="navbar__logo" href="index.html">
         <img class="navbar__logo-img" src="images/ear-mark.png" alt="Somnus home" width="120" height="32">
         <span class="navbar__logo-text" aria-hidden="true">Somnus</span>
       </a>
-      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
-        <span class="navbar__toggle-icon" aria-hidden="true"></span>
-        <span class="navbar__toggle-label">Menu</span>
-      </button>
       <div class="navbar__menu" id="site-menu">
         <ul class="navbar__links">
           <li class="navbar__item"><a class="navbar__link" href="shop.html" aria-current="page">Shop</a></li>
-          <li class="navbar__item"><a class="navbar__link" href="why-choose-us.html">Why Sleepbuds</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="why-choose-us.html">Why Earplugs</a></li>
           <li class="navbar__item"><a class="navbar__link" href="product-guide.html">Guides</a></li>
           <li class="navbar__item"><a class="navbar__link" href="faq-reviews.html">FAQ</a></li>
           <li class="navbar__item"><a class="navbar__link" href="our-story.html">Our Story</a></li>
         </ul>
       </div>
-      <a class="navbar__cta btn btn--primary" href="product-detail.html">Shop Sleepbuds</a>
+      <a class="navbar__cta btn btn--primary" href="product-detail.html">Shop Earplugs</a>
     </nav>
   </header>
 
@@ -49,7 +52,7 @@
             <a class="button dark" href="#seasonal-offers">Explore seasonal offers <span aria-hidden="true">↓</span></a>
           </div>
           <figure class="shop-hero__visual reveal">
-            <img src="images/product/dream-blue-1.png" alt="Blue Loop Dream earplugs" width="1000" height="1000" fetchpriority="high">
+            <img src="images/product/dream-blue-1.png" alt="Blue Somnus Sleep Earplugs" width="1000" height="1000" fetchpriority="high">
           </figure>
         </header>
 
@@ -62,13 +65,13 @@
           <div class="shop-offers__grid">
             <article class="shop-offer shop-offer--1111 reveal" id="offer-1111" data-shop-offer="1111" tabindex="-1">
               <div class="shop-offer__visual">
-                <img src="images/product/dream-black-1.png" alt="Black Loop Dream sleep earplugs" width="1000" height="1000" loading="lazy">
+                <img src="images/product/dream-black-1.png" alt="Black Somnus Sleep Earplugs" width="1000" height="1000" loading="lazy">
               </div>
               <div class="shop-offer__content">
                 <span class="shop-offer__badge">11.11 Sale</span>
                 <h3>Double the dates, half the noise.</h3>
                 <p class="shop-offer__value">20% <span>OFF</span></p>
-                <p class="shop-offer__description">Save 20% OFF on your first pair of Somnus Sleepbuds and make more room for restful nights.</p>
+                <p class="shop-offer__description">Save 20% OFF on your first pair of Somnus Earplugs and make more room for restful nights.</p>
                 <div class="shop-offer__footer">
                   <p class="shop-offer__date">Ends 11 Nov</p>
                   <a class="button dark" href="product-detail.html">
@@ -79,13 +82,13 @@
             </article>
             <article class="shop-offer shop-offer--1212 reveal" id="offer-1212" data-shop-offer="1212" tabindex="-1">
               <div class="shop-offer__visual">
-                <img src="images/product/dream-packaging.jpg" alt="Loop Dream packaging with bedside case and spare ear tips" width="1000" height="1000" loading="lazy">
+                <img src="images/product/dream-packaging.jpg" alt="Somnus packaging with bedside case and spare ear tips" width="1000" height="1000" loading="lazy">
               </div>
               <div class="shop-offer__content">
                 <span class="shop-offer__badge">12.12 Holiday</span>
                 <h3>Give the gift of peace.</h3>
                 <p class="shop-offer__value">FREE <span>Premium Travel Case</span></p>
-                <p class="shop-offer__description">Buy any sleepbuds and get a FREE Premium Travel Case for easier, more peaceful nights away.</p>
+                <p class="shop-offer__description">Buy any earplugs and get a FREE Premium Travel Case for easier, more peaceful nights away.</p>
                 <div class="shop-offer__footer">
                   <p class="shop-offer__date">Ends 12 Dec</p>
                   <a class="button dark" href="product-detail.html">
@@ -116,12 +119,12 @@
 
         <section class="shop-set" aria-labelledby="shop-set-title">
           <figure class="shop-set__visual">
-            <img src="images/buds-set.jpg" alt="Loop Dream earplugs with a black sleep mask" width="1100" height="1100" loading="lazy">
+            <img src="images/buds-set.jpg" alt="Somnus Sleep Earplugs with a black sleep mask" width="1100" height="1100" loading="lazy">
           </figure>
           <div class="shop-set__content">
             <p class="shop-offers__eyebrow">The sleep set</p>
             <h2 id="shop-set-title">A little more comfort for bedtime.</h2>
-            <p class="shop-set__description">Pair a sleep mask with Loop Dream earplugs for a calmer bedtime routine.</p>
+            <p class="shop-set__description">Pair a sleep mask with Somnus Sleep Earplugs for a calmer bedtime routine.</p>
             <p class="shop-set__price">$80</p>
             <a class="button dark" href="product-detail.html">See product detail <span aria-hidden="true">→</span></a>
           </div>
@@ -130,7 +133,7 @@
 
       <section class="shop-specs" id="technical-details" aria-labelledby="shop-specs-title">
           <div class="shop-specs__visual">
-            <img src="images/made-for-sleep.jpg" alt="Loop Dream earplug sitting flush in the ear of a side sleeper" width="1000" height="1000" loading="lazy">
+            <img src="images/made-for-sleep.jpg" alt="Somnus sleep earplug sitting flush in the ear of a side sleeper" width="1000" height="1000" loading="lazy">
           </div>
           <div class="shop-specs__content">
             <header class="shop-specs__head reveal">
@@ -140,11 +143,11 @@
             <dl class="shop-specs__grid">
               <div class="shop-spec">
                 <dt>27 dB (SNR)</dt>
-                <dd>Loop's highest SNR rating; softens noise but does not silence it completely.</dd>
+                <dd>Our highest SNR rating; softens noise but does not silence it completely.</dd>
               </div>
               <div class="shop-spec">
                 <dt>Soft, low-profile fit</dt>
-                <dd>Loop's softest silicone, designed to reduce ear pressure for side sleepers.</dd>
+                <dd>Our softest silicone, designed to reduce ear pressure for side sleepers.</dd>
               </div>
               <div class="shop-spec">
                 <dt>Two tip styles</dt>
@@ -233,7 +236,7 @@
       <div class="footer-top">
         <div>
           <a class="brand" href="index.html"><img src="images/ear-mark.png" alt="">SOMNUS</a>
-          <p>A calm place to explore the questions that matter before choosing sleepbuds.</p>
+          <p>A calm place to explore the questions that matter before choosing earplugs.</p>
         </div>
         <div>
           <h3>About</h3>
