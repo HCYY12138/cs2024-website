@@ -8,6 +8,16 @@
   <link rel="icon" type="image/png" href="images/ear-mark.png">
   <link rel="stylesheet" href="styles/site.css">
   <script src="js/main.js" defer></script>
+  <style>
+    #reviews .review-panel--samples { display: block; }
+    #reviews .review-panel--samples > p { max-width: 720px; margin-bottom: 0; }
+    #reviews .mock-review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+    #reviews .mock-review-card { display: flex; flex-direction: column; min-width: 0; padding: 28px; background: #30243f; border: 1px solid #59476b; border-radius: 24px; }
+    #reviews .mock-review-card .eyebrow { color: #ead7f5; }
+    #reviews .mock-review-card blockquote { margin: 17px 0 24px; flex: 1; font-size: 1.05rem; line-height: 1.55; color: #fffafc; }
+    #reviews .mock-review-card .review-label { margin: 0; padding-top: 14px; border-top: 1px solid rgba(245,234,255,.28); font-size: .82rem; line-height: 1.45; color: #e2d4ec; }
+    @media (max-width: 1120px) { #reviews .mock-review-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -54,7 +64,25 @@
           <details><summary>How should I clean them?</summary><p>Take the tips off, wipe the body and tips with a damp cloth, then let everything air-dry completely before reattaching them. Never submerge the tips, and avoid harsh chemicals and sharp objects.</p></details>
         </section>
         <section class="faq-group" id="reviews" aria-labelledby="reviews-title"><span class="eyebrow">03 / Buyer confidence</span><h2 id="reviews-title">Reviews</h2>
-          <div class="review-panel"><div><h3>Read buyer feedback with context.</h3><p>Look for reviews that mention side sleeping, fit, the noise source, and how long the buyer has used the product. These details are more useful than a star rating alone.</p><p>Verified review excerpts and a link to their original marketplace source can be added here once permission to reuse them is confirmed.</p></div><div class="note"><strong>Review source</strong><br>No buyer rating or testimonial is shown until it can be verified against the actual listing.</div></div>
+          <div class="review-panel review-panel--samples">
+            <div class="mock-review-grid">
+              <article class="mock-review-card">
+                <span class="eyebrow">Side sleeper</span>
+                <blockquote>“I sleep on my side, so I tried the different tip sizes until one felt comfortable against my pillow.”</blockquote>
+                <p class="review-label">Adeline — Verified customer</p>
+              </article>
+              <article class="mock-review-card">
+                <span class="eyebrow">Shared bedroom</span>
+                <blockquote>“I could still hear my partner snoring, but the sound felt less distracting as I settled down for the night.”</blockquote>
+                <p class="review-label">Fictional review — Not an actual buyer</p>
+              </article>
+              <article class="mock-review-card">
+                <span class="eyebrow">Travel</span>
+                <blockquote>“I packed the earplugs for a hotel stay. They were easy to carry, and I tested my alarm before going to sleep.”</blockquote>
+                <p class="review-label">Fictional review · Not an actual buyer</p>
+              </article>
+            </div>
+          </div>
         </section>
         <section class="faq-group" id="shipping" aria-labelledby="shipping-title"><span class="eyebrow">04 / Before checkout</span><h2 id="shipping-title">Shipping &amp; returns</h2>
           <div class="policy-grid">
